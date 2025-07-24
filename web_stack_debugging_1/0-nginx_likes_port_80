@@ -1,0 +1,15 @@
+#!/usr/bin/env bas
+# a script that restores the default server port
+
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+curl -i 0:80
+#!/usr/bin/env bas
+# a script that restores the default server port
+
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+curl -i 0:80
+
